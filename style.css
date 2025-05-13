@@ -1,0 +1,152 @@
+body {
+    color: red;
+    background-color: black;
+    font-family: lexend;
+}
+div {
+   
+}
+
+nav {
+    margin-top: 100px;
+    margin-right: 5%;
+    margin-left: 10%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: blue;
+}
+
+.icerik {
+
+    align-items: center;
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color:#00ff00 ;
+    text-decoration: none;
+    text-align: right;
+    font-size: 15pt;
+}
+
+nav a:hover {
+    color:yellow;
+    text-decoration: none;
+    text-align: right;
+    font-size: 15pt;
+}
+
+.logo {
+    margin: px;
+    margin-top: 100px;
+    object-fit: contain;
+    max-height: 100px;
+    height: 100%;
+    width: 100%;
+}
+
+.post {
+    object-fit: cover;
+    max-height: 360px;
+}
+
+.post div {
+    max-height: 100px;
+}
+
+
+.albums {
+     display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+
+.albums img {
+    object-fit: cover;
+    width: 480px;
+    height: auto;
+    display: relative;
+}
+
+.albums img:hover {
+    object-fit: cover;
+    width: 500px;
+    height: auto;
+    display: absolute;
+}
+
+.albums table,
+.albums td,
+.albums tr {
+    padding: 15px;
+    font-family: lexend;
+    width: 350px
+
+}
+
+.beyaz {
+    color: white;
+    font-weight: 500;
+}
+
+i {
+    padding: 8px;
+}
+
+/* Albumssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss */
+
+
+.album-gallery {
+    display: block;
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+
+.album-gallery img {
+    width: 360px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.album-gallery img:hover {
+    border-color: #00ff00;
+}
+
+.album-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: #111;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.album-info img {
+    width: 640px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.album-gallery img:hover {
+    transform: scale(1.05); /* büyütme efekti */
+border-color: #00ff00;
+}
+
+/* Fade-in efekti */
+.album-info.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.album-info.show {
+    opacity: 1;
+}

@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>za</title>
+    <style>
+        .album-gallery {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+        }
+
+        .album-gallery img {
+        width: 100px;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: 0.3s;
+        }
+
+        .album-gallery img:hover {
+        border-color: hotpink;
+        }
+
+        .album-info {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        background: #111;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        }
+
+        .album-info img {
+        width: 200px;
+        height: auto;
+        border-radius: 8px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<div class="album-gallery">
+  <img src="Albums/cast away.jpg" alt="Albüm 1" onclick="showAlbum(1)">
+  <img src="Albums/emptiness.jpg" alt="Albüm 2" onclick="showAlbum(2)">
+  <img src="Albums/firsties.jpg"Albüm 3" onclick="showAlbum(3)">
+</div>
+
+<div class="album-info">
+  <img id="album-cover" src="cover1.jpg">
+  <div id="album-text">
+    <h2>Albüm Adı</h2>
+    <p>Buraya albüm bilgisi gelecek.</p>
+  </div>
+</div>
+
+<script>
+  const albums = {
+    1: {
+      cover: 'Albums/cast away.jpg',
+      name: 'Cast Away',
+      info: '2017 yılında çıkan Techno türünde bir albüm.'
+    },
+    2: {
+      cover: 'Albums/emptiness.jpg',
+      name: 'Neon Dreams',
+      info: '2020 yapımı, synthwave etkileri taşıyan bir albüm.'
+    },
+    3: {
+      cover: 'Albums/firsties.jpg',
+      name: 'Silent Forest',
+      info: 'Doğayla iç içe ambient bir yolculuk, 2023.'
+    }
+  }
+
+  function showAlbum(id) {
+    const data = albums[id];
+    document.getElementById('album-cover').src = data.cover;
+    document.getElementById('album-text').innerHTML = `
+      <h2>${data.name}</h2>
+      <p>${data.info}</p>
+    `;
+  }
+</script>
+
+
+</body>
+</html>
