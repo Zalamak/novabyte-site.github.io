@@ -1,12 +1,12 @@
  const albums = {
     1: {
-        cover: 'Albums/Emptiness2.jpg',
+        cover: 'Albums/emptiness2.jpg',
         name: 'Emptiness',
         info: '2017 yılında çıkan Techno türünde bir albüm.'
     },
 
     2: {
-        cover: 'Albums/Cast Away.jpg',
+        cover: 'Albums/cast Away.jpg',
         name: 'Cast Away',
         info: '2020 yapımı, synthwave etkileri taşıyan bir albüm.'
     },
