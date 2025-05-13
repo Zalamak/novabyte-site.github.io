@@ -6,7 +6,7 @@
     },
 
     2: {
-        cover: 'Albums/cast Away.jpg',
+        cover: 'Albums/cast away.jpg',
         name: 'Cast Away',
         info: '2020 yapımı, synthwave etkileri taşıyan bir albüm.'
     },
